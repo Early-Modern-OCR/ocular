@@ -415,7 +415,7 @@ public class FontTrainer {
 						int prevLangIndex = (prevLanguage == null && numLangs == 1 ? 0 : langIndexer.getIndex(prevLanguage));
 						     System.err.println("langIndexer.getObject(0) = " + langIndexer.getObject(0));
 						     System.err.println("LangIndexer.getObject(1) = " + langIndexer.getObject(1));
-						     System.err.println("langIndexer.size() = + " langIndexer.size());
+						     System.err.println("langIndexer.size() = " + langIndexer.size());
 						     System.err.println("prevLanguage: " + prevLanguage);
 						allTranscriptionsByLanguage.get(prevLangIndex).add(currentOutput);
 					}
