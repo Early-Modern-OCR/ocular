@@ -22,8 +22,8 @@
         * For simplicity, the EMOP dashboard is set up to always use an `-inputGsmPath`, and (I think) always use `-updateGsm true` in `TrainFont`.  The user can put the `-jkNoGsm` option into the dashboard’s field for arbitrary extra options to override this and tell Ocular not to use a GSM at all.
         * For `TrainFont`, a blank GSM will be written to `outputGsmPath`.
         * (A variable `jkNoGsmOutput` is used internally to re-direct `outputGsmPath` so that errors aren't thrown by the fact that `-updateGsm` will be forced to `false`.)
-    * Added option `allowOverlappingLines`
-        * The emop dashboard defaults to the non-overlapping line extractor, a simple line extractor designed for v0.3 that slices the page into lines based on a height learned from the page. To implement the more sophisticated line extractor, which allows overlapping lines, use `allowOverlappingLines false'. For this option, line heights are hard-wired into the code, but can overlap.
+    * Added option `-allowOverlappingLines`
+        * The emop dashboard defaults to the non-overlapping line extractor, a simple line extractor designed for v0.3 that slices the page into lines based on a height learned from the page. To implement the more sophisticated line extractor, which allows overlapping lines, use `allowOverlappingLines true`. For this option, line heights are hard-wired into the code, but can overlap.
 
 
 ### Changed files
