@@ -105,7 +105,7 @@ public abstract class FonttrainTranscribeShared extends LineExtractionOptions {
 	// ##### Miscellaneous Options
 
 	@Option(gloss = "Should documents that cause errors be skipped instead of stopping the whole program?")
-	public static boolean skipFailedDocs = false;
+	public static boolean skipFailedDocs = true;
 	
 	public static enum EmissionCacheInnerLoopType { DEFAULT, OPENCL, CUDA };
 	@Option(gloss = "Engine to use for inner loop of emission cache computation. `DEFAULT`: Uses Java on CPU, which works on any machine but is the slowest method. `OPENCL`: Faster engine that uses either the CPU or integrated GPU (depending on processor) and requires OpenCL installation. `CUDA`: Fastest method, but requires a discrete NVIDIA GPU and CUDA installation.")
