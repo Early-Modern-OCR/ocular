@@ -24,7 +24,8 @@
         * (A variable `jkNoGsmOutput` is used internally to re-direct `outputGsmPath` so that errors aren't thrown by the fact that `-updateGsm` will be forced to `false`.)
     * Added option `-allowOverlappingLines`
         * The emop dashboard defaults to the non-overlapping line extractor, a simple line extractor designed for v0.3 that slices the page into lines based on a height learned from the page. To implement the more sophisticated line extractor, which allows overlapping lines, use `allowOverlappingLines true`. For this option, line heights are hard-wired into the code, but can overlap.
-
+    * Added option `-skipFailedDocs`
+        * Default: true. If there's a problem with a specific document, this allows Ocular to skip to the next document without crashing.
 
 ### Changed files
 
